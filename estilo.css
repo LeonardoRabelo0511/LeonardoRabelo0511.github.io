@@ -1,0 +1,305 @@
+html, body {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 20px 0;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.cor_fundo {
+  background: #f7f7f7;
+}
+#cor_ods {
+  background-color: #008040;
+}
+/* --------  Header  -------- */
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #65C96D;
+}
+header #logo {
+  position: absolute;
+  float: left;
+  height: 40px;
+  width: 170px;
+  margin-left: 5%;
+}
+#img_logo {
+  height: 60px;
+  width: 60px;
+}
+header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 5%;
+}
+header .menu li {
+  float: left;
+  font-size: 18px;
+  padding: 15px 10px 19px 10px;
+  color: white;
+}
+.div_li {
+  float: left;
+}
+header .menu li a {
+  color: initial;
+  text-decoration: initial;
+  color: white;
+}
+header .menu li:hover {
+  background-color: #A1C9A5;
+}
+#social {
+  height: 35px;
+}
+#li_social {
+  padding: 10px 10px 9px 10px;
+}
+/* --------  Capa  -------- */
+figure {
+  margin: 0 auto;
+  height: 1000px;
+}
+figure .imagem_fundo {
+  background: url(img/fundo.jpg); 
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+}
+figure .titulo {
+  color: #FFF;
+  line-height: 1.0;
+  text-shadow: 1px 1px black;
+}
+figure h1.titulo {
+  font-size: 70px;
+  letter-spacing: -5px;
+  margin: 20% 20% 0 20%;
+  padding-bottom: 20px;
+}
+figure h2.titulo {
+  padding-top: 20px;
+  font-size: 30px;
+  margin: 0 30% 0 30%;
+  border-top: 3px solid white;
+  padding-bottom: 30px;
+}
+.cta {
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+  padding: 10 20 10 20;
+  text-decoration: initial;
+  font-size: 20px;
+}
+.cta:hover {
+  background-color: #A1C9A5;
+  border: 0px;
+}
+/* --------  Colunas  -------- */
+.coluna {
+  float: left;
+  padding: 0 5%;
+  position: relative;
+}
+.coluna.quatro {
+  width: 15%;
+  padding: 3% 5% 0 5%;
+}
+.coluna.tres {
+  width: 29%;
+  padding: 0 2%;
+}
+.coluna.dois {
+  width: 40%;
+}
+.coluna .icone {
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  text-align: center;
+  margin: 0 auto;
+}
+.coluna .icone img{
+  max-width: 60%;
+  max-height: 60%;
+  margin: 15px;
+}
+.coluna:hover .icone {
+  background: #73E67C;
+}
+.coluna img {
+  width: 100%;
+  height: 300px;
+}
+#seta {
+  margin: 0 40% 20px 5%;
+}
+iframe {
+  text-align: center;
+}
+#img_projeto {
+  width: 100%;
+  height: 85%;
+}
+.projeto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px 35px 5% 2px;
+  border: solid #73E67C 5px;
+  float: right;
+}
+.projeto:hover {
+  background-color: #73E67C;
+}
+.border {
+  border-radius: 10%;
+  border: solid #73E67C 5px;
+}
+#eu {
+  width: 330px;
+  padding: 5%;
+  margin-bottom: 50px;
+  border-radius: 100%;
+}
+/* --------  Textos  -------- */
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+p {
+  font-size: 16px;
+}
+.esquerda {
+  text-align: left;
+}
+.direita {
+  text-align: right;
+}
+.centro {
+  text-align: center;
+}
+.justificado {
+  text-align: justify;
+}
+.link {
+  color: white;
+}
+p, h1, h2, li {
+  font-family: 'Lobster', cursive;
+}
+/*--------   SAVE   --------*/ 
+#save {
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+  color: #73E67C;
+  text-align: center;
+}
+/* --------  Footer  -------- */
+footer {
+  background-color: #759378;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  color: #fff;
+}
+footer .container {
+  padding: 30px 0 50px 0;
+}
+/* --------  Responsividade  --------*/
+@media all and (max-width: 768px) {
+  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois{
+    display: block;
+    width: 80%;
+    padding: 10%;
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .menu {
+    visibility: hidden;
+    position: unset;
+    block-size: 0%;
+  }
+  figure h1.titulo {
+    margin: 40% 0 0 0;
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  figure h2.titulo {
+    margin: 0 10% 0 10%;
+    font-size: 25px;
+  }
+  #img_projeto {
+    height: 50%;
+  }
+  .projeto {
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  #eu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  #seta {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+  }
+  iframe {
+    width: 80%;
+    height: 60%;
+  }
+  .projeto.centro {
+    visibility: visible;
+  }
+  .projeto {
+    float: none;
+  }
+  .coluna img {
+    height: unset;
+  }
+  #hr2 {
+    visibility: hidden;
+    height: unset;
+    width: unset;
+  }
+  #ods {
+    width: 100%;
+    text-align: center;
+  }
+  #save {
+    font-size: 50px;
+  }
+}
