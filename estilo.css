@@ -97,7 +97,8 @@ nav ul li#li a:hover {
 .toggle-menu ul {
   display:table; 
   width:25px;
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-top: -20px;
 }
 ul {
   padding: 0%;
@@ -375,7 +376,7 @@ footer .container {
   input[type=checkbox]:fous {
     background:none;
   }
-  label { 
+  label {
   float: right; 
   padding: 13px 0px; 
   display: inline-block; 
@@ -388,7 +389,7 @@ footer .container {
   display:none; 
   position:absolute; 
   right:40px; 
-  top:90px; 
+  top:60px; 
   background-color: #008040; 
   padding:0px; 
   z-index:2;
