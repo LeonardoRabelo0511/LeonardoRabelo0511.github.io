@@ -52,9 +52,6 @@ header .menu li {
   padding: 15px 10px 19px 10px;
   color: white;
 }
-.div_li {
-  float: left;
-}
 header .menu li a {
   color: initial;
   text-decoration: initial;
@@ -66,8 +63,73 @@ header .menu li:hover {
 #social {
   height: 35px;
 }
-#li_social {
-  padding: 10px 10px 9px 10px;
+li#li_social {
+  margin-right: 10px;
+}
+nav { 
+  width:auto; 
+}
+nav ul { 
+  display:table; 
+  list-style: none;
+  margin-top: 15px;
+  float:right;
+}
+nav ul li {
+  float:left;
+}
+nav ul li:last-child { 
+  padding-right:0px;
+}
+nav ul li a {
+  color:#f1f1f1; 
+  font-size: 18px; 
+  padding: 5px 10px; 
+  display:inline-block; 
+  text-align: center;
+}
+nav ul li#li a:hover {
+  background-color:#A1C9A5; 
+}
+.toggle-menu {
+  top: 0%;
+}
+.toggle-menu ul {
+  display:table; 
+  width:25px;
+  margin-right: 40px;
+}
+ul {
+  padding: 0%;
+  margin-bottom: 0%;
+  list-style: none;
+}
+.toggle-menu ul li {
+    width:100%; 
+    height:3px; 
+    background-color:#f1f1f1; 
+    margin-bottom:4px;
+    margin-right: 5%;
+}
+.toggle-menu ul li:last-child {
+  margin-bottom:0px;
+}
+input[type=checkbox], label {
+  display:none;
+}
+.content {
+  display:table; 
+  margin-bottom:60px; 
+  width:900px;
+}
+.content h2 {
+  font-size:18px; 
+  font-weight:500; 
+  color:#002e5b; 
+  border-bottom:1px solid #fde428; 
+  display:table; 
+  padding-bottom:10px; 
+  margin-bottom:10px;
 }
 /* --------  Capa  -------- */
 figure {
@@ -83,11 +145,12 @@ figure .imagem_fundo {
 figure .titulo {
   color: #FFF;
   line-height: 1.0;
-  text-shadow: 1px 1px black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
 figure h1.titulo {
   font-size: 70px;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
   margin: 20% 20% 0 20%;
   padding-bottom: 20px;
 }
@@ -95,20 +158,21 @@ figure h2.titulo {
   padding-top: 20px;
   font-size: 30px;
   margin: 0 30% 0 30%;
-  border-top: 3px solid white;
+  border-top: 3px solid black;
   padding-bottom: 30px;
 }
 .cta {
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 8px;
   color: white;
   padding: 10 20 10 20;
   text-decoration: initial;
   font-size: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
 }
 .cta:hover {
   background-color: #A1C9A5;
-  border: 0px;
 }
 /* --------  Colunas  -------- */
 .coluna {
@@ -149,12 +213,9 @@ figure h2.titulo {
 #seta {
   margin: 0 40% 20px 5%;
 }
-iframe {
-  text-align: center;
-}
 #img_projeto {
   width: 100%;
-  height: 85%;
+  height: 100%;
 }
 .projeto {
   width: 150px;
@@ -171,6 +232,9 @@ iframe {
 .border {
   border-radius: 10%;
   border: solid #73E67C 5px;
+}
+#ods {
+  width: 100%;
 }
 #eu {
   width: 330px;
@@ -260,7 +324,8 @@ footer .container {
     font-size: 25px;
   }
   #img_projeto {
-    height: 50%;
+    width: 350px;
+    height: 70%;
   }
   .projeto {
     margin-right: 0%;
@@ -301,5 +366,55 @@ footer .container {
   }
   #save {
     font-size: 50px;
+  }
+  input[type=checkbox] {
+    position: absolute; 
+    top: -9999px; 
+    left: -9999px; 
+    background:none;}
+  input[type=checkbox]:fous {
+    background:none;
+  }
+  label { 
+  float: right; 
+  padding: 13px 0px; 
+  display: inline-block; 
+  cursor: pointer; 
+  }
+  input[type=checkbox]:checked ~ nav {
+    display: block;
+  }
+  nav {
+  display:none; 
+  position:absolute; 
+  right:40px; 
+  top:90px; 
+  background-color: #008040; 
+  padding:0px; 
+  z-index:2;
+  }    
+  nav ul {
+    width:auto;
+  }
+  nav ul li {
+    float:none; 
+    padding:0px; 
+    width:100%; 
+    display:table;
+  }
+  nav ul li a {
+    color:#FFF; 
+    font-size:15px; 
+    padding:10px 20px; 
+    display:block; 
+    border-bottom: 1px solid rgba(225,225,225,0.1);
+  }
+  nav ul li a i {
+    color:#fde428; 
+    padding-right:13px;
+  }
+  nav ul li a:hover {
+  background-color:#002e5b; 
+  color:#f1f1f1; 
   }
 }
